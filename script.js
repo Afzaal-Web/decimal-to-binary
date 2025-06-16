@@ -1,0 +1,1 @@
+const afzaal = document.getElementById('afzaal');
