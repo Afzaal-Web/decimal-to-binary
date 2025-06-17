@@ -7,17 +7,21 @@ But you have to be careful because you can easily create an infinite loop.
 That's where the base case comes in. The base case is when the function 
 stops calling itself, and it is a good idea to write it first. */
 
-const countdown = (number) => {
+const countDownAndUp = (number) => {
   console.log(number);
 
   if (number === 0) {
+    console.log("Reached base case");
     return;
   } else {
-    countdown(number - 1);
+    countDownAndUp(number - 1 );
+    console.log(number);
   }
 };
 
-countdown(20);
+countDownAndUp(3);
+
+
 
 const decimalToBinary = (input) => {
   let binary = "";
